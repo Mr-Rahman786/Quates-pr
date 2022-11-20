@@ -16,6 +16,11 @@ const DefoultHome = () => {
                     <button className='about-btn'>About</button>
                 </div>
             </div>
+            <div>
+                <footer className='footer'>
+                    <p>All right reserved Quaras</p>
+                </footer>
+            </div>
         </div>
     );
 };
