@@ -1,0 +1,14 @@
+.home-container{
+    margin-top: 5%;
+    background-color: grey;
+}
+.quizes-main-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+@media screen and (max-width:376px) {
+    .quizes-main-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

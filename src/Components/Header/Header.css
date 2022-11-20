@@ -1,0 +1,36 @@
+.nav-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* height: 20px; */
+    margin: 0;
+    background-color: black;
+}
+.nav-logo img{
+    width: 120px;
+}
+.nav-link a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    margin-left: 10%;
+    /* background-color: grey; */
+}
+.nav-link a:hover{
+    border-bottom: 3px solid orangered;
+    transition: 0.7s;
+    /* background-color: grey;   */
+    /* padding: 0px 20px; */
+}
+@media screen and (max-width:376px) {
+    .nav-item{
+        justify-content: start;
+    }
+    .nav-link a{
+        font-size: 15px;
+    }
+    .nav-link a:hover{
+        padding: 0;
+        background:none;
+    }
+}
