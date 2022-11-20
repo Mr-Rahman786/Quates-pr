@@ -4,7 +4,7 @@ import Quizes from '../Quizes/Quizes';
 import './Home.css'
 const Home = () => {
     const quizes = useLoaderData();
-    console.log(quizes)
+    // console.log(quizes)
     return (
         <div className='home-container'>
             <div className='quizes-main-container'>

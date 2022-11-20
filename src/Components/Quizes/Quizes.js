@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Quizes.css'
 const Quizes = ({ quiz }) => {
-    const { name, logo } = quiz;
+    const { id, name, logo } = quiz;
+    // console.log(id)
     return (
         <div className='quizes-container'>
             <img src={logo} alt="" />
@@ -10,7 +12,8 @@ const Quizes = ({ quiz }) => {
                     <h4>{ name}</h4>
                 </div>
                 <div>
-                    <button className='btn-start'>Start Practice</button>
+                    {/* <button className=''>Start Practice</button> */}
+                    <Link to={`/question/${id}`}>Start Practice</Link>
                 </div>
             </div>
         </div>
