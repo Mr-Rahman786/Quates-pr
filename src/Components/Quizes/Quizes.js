@@ -5,7 +5,14 @@ const Quizes = ({ quiz }) => {
     return (
         <div className='quizes-container'>
             <img src={logo} alt="" />
-            <h4>{ name}</h4>
+            <div className='cart-details'>
+                <div>
+                    <h4>{ name}</h4>
+                </div>
+                <div>
+                    <button className='btn-start'>Start Practice</button>
+                </div>
+            </div>
         </div>
     );
 };

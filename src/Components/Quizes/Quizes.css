@@ -3,5 +3,29 @@
     height: 200px;
 }
 .quizes-container{
+    border: 2px solid grey;
+    margin: 0 auto;
     margin-top: 5%;
+    width: 300px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.cart-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+}
+.btn-start{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: crimson;
+    color: white;
+}
+.btn-start:hover{
+    background-color: orangered;
+    color: white;
+    transition: 0.6s;
 }
