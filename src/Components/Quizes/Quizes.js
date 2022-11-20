@@ -11,9 +11,9 @@ const Quizes = ({ quiz }) => {
                 <div>
                     <h4>{ name}</h4>
                 </div>
-                <div>
+                <div className='link-cart'>
                     {/* <button className=''>Start Practice</button> */}
-                    <Link to={`/question/${id}`}>Start Practice</Link>
+                    <Link  to={`/question/${id}`}>Start Practice</Link>
                 </div>
             </div>
         </div>

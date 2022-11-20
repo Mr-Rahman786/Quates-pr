@@ -4,7 +4,8 @@
     padding: 10px;
     top: 5%;
     width: 70%;
-    margin-top: 10px;
+    margin-top: 3%;
+    margin-left: 15%;
    
 }
 .option-more{
@@ -21,6 +22,13 @@
     border: 1px solid rgb(255, 250, 250);
     padding: 8px 25px;
     border-radius: 7px;
+}
+.link-cart a{
+    text-decoration: none;
+    color: white;
+    background-color: crimson;
+    padding: 7px 20px;
+    border-radius: 10px;
 }
 @media screen and (max-width:376px) {
     .option-more{
