@@ -36,6 +36,7 @@
         width: 100%;
     }
     .question-main{
-        width: 100%;
+        width: 90%;
+        margin-left: 2%;
     }
 }

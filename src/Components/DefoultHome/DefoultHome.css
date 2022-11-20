@@ -41,7 +41,15 @@
     padding-top: 2%;
 }
 @media screen and (max-width:376px) {
+    .banner-section img{
+        height: 200px;
+    }
     .banner-main-container{
         grid-template-columns: repeat(1,1fr);
+        height: 500px;
+    }
+    .text-container{
+        margin-top: 0;
+        padding-top: 0;
     }
 }
