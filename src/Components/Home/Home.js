@@ -15,6 +15,10 @@ const Home = () => {
                 ></Quizes>)
             }
             </div>
+            <div className='cart-container'>
+                <h2>Yeeh! Chose one and get correct Answer</h2>
+                <small>There Question answer be right today you can get the question Faith!</small>
+            </div>
         </div>
     );
 };

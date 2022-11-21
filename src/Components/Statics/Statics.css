@@ -1,0 +1,13 @@
+.linecharts{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 5%;
+}
+
+@media screen and (max-width:376px){
+    .linecharts{
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+    }
+
+}

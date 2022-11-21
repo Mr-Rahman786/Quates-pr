@@ -1,6 +1,7 @@
 import React from 'react';
 import './Statics.css'
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+// import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const Statics = () => {
     const data = [
@@ -23,20 +24,26 @@ const Statics = () => {
     ]
     return (
         <div className='linecharts'>
-            <LineChart className='line'
-                width={1000}
-                height={400}
-                data={data}
-
-            >
-                <CartesianGrid strokeDasharray="3 3" />
-                 <XAxis dataKey="name" />
+            <div>
+                <h1>There is line charts about the question!!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ab culpa illo voluptates esse ex velit aut? Iure, ut necessitatibus!</p>
+            </div>
+            <div>
+                 <BarChart
+                className='barcharts'
+          width={400}
+          height={300}
+          data={data}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
           <Legend />
-                <Line type="monotone" dataKey="name" stroke="#8884d8" activeDot={{ r: 8 }} />
-          <Line type="monotone" dataKey="total" stroke="#82ca9d" />
-            </LineChart>
+          <Bar dataKey="name" fill="#8884d8" />
+          <Bar dataKey="total" fill="#82ca9d" />
+        </BarChart>
+            </div>
         </div>
     );
 };

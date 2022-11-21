@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import { EyeIcon } from '@heroicons/react/24/solid'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Singlequestion.css'
 import swal from 'sweetalert';
 const SingleQuestion = ({ ques }) => {
     const { id, question, correctAnswer, options } = ques;
     
+    const eventHandler = () => {
+        toast(ques.correctAnswer);
+    }   
     const answerSubmission = (e) => {
         if (e.target.id === ques.correctAnswer) {
             console.log('correct')
@@ -20,7 +24,8 @@ const SingleQuestion = ({ ques }) => {
         <div >
             <div className='question-main'>
                 <h4>{question}</h4>
-                <EyeIcon className='icons'></EyeIcon>
+                <ToastContainer></ToastContainer>
+                <EyeIcon onClick={eventHandler} className='icons'></EyeIcon>
                 <div className='option-more'>
                 <div className='question-option'>
                         <input onChange={answerSubmission} type="radio" name="questions" id={options[0]} />
@@ -44,5 +49,4 @@ const SingleQuestion = ({ ques }) => {
         </div>
     );
 };
-{/* <p>{ options[1]}</p> */}
 export default SingleQuestion;
